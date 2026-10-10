@@ -3,9 +3,6 @@ A webcrawler / program which browses through google.com
 
 PREVIEW:
   <img width="1292" height="552" alt="Screenshot 2026-10-10 134349" src="https://github.com/user-attachments/assets/b17b5a72-41c8-47ee-a313-091393325d6a" />
-
-DEMO: <br>
-  https://drive.google.com/drive/folders/1lPH3IFZqUO7a4Lx273syqNXGBigwsvpD?usp=sharing
   
 WHAT IS THIS FOR? <br>
   • May be used for making you very own search engine <br>
