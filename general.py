@@ -15,7 +15,7 @@ def create_data_files(project_name, base_url):
     if not os.path.isfile(crawled):
         write_file(crawled, '')
 
-#create new file.. fix error here
+#create new file.. 
 def write_file(path, data):
     with open(path, 'w') as f:
         f.write(data)
