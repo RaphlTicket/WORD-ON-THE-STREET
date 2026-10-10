@@ -8,6 +8,7 @@ def create_project_dir(directory):
 
 #queue and crawled files, checks if it was already crawled or not
 def create_data_files(project_name, base_url):
+    create_project_dir(project_name)
     queue = project_name + '/queue.txt'
     crawled = project_name + '/crawled.txt'
     if not os.path.isfile(queue):
@@ -19,8 +20,6 @@ def create_data_files(project_name, base_url):
 def write_file(path, data):
     with open(path, 'w') as f:
         f.write(data)
-
-create_data_files('wikipedia', 'https://en.wikipedia.org/wiki/Main_Page')
 
 #add data onto file
 def append_to_file(path, data):
@@ -44,4 +43,5 @@ def set_to_file(links,  file):
     delete_file_contents(file)
     for link in sorted(links):
         append_to_file(file, link)
-        
+
+create_data_files('google', 'https://www.google.com/')

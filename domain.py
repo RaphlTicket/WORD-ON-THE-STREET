@@ -4,7 +4,7 @@ from urllib.parse import urlparse
 def get_domain_name(url):
     try: 
         results = get_sub_domain_name(url).split('.')
-        return results[-2] + '.' + results [-1]
+        return results[-2] + '.' + results [-1] #gets second to last and last thing on the sub domain afaik
     except:
         return ''
 
@@ -14,5 +14,3 @@ def get_sub_domain_name(url):
         return urlparse(url).netloc
     except:
         return ''
-
-print(get_domain_name('https://en.wikipedia.org/wiki/Fridtjof_Nansen'))

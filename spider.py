@@ -48,7 +48,7 @@ class Spider:
         html_string = ''
         try:
             response = urlopen(page_url)
-            if response.getheader('Content-Type') == 'text/html': #makes sure its at a webpage
+            if 'text/html' in response.getheader('Content-Type'): #makes sure its at a webpage
                 html_bytes = response.read()
                 html_string = html_bytes.decode("utf-8")
 
